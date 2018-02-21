@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./form.css">
+    <script src="validate.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2>Registration</h2>
+    <form action="ajax.html" method="post" name="registration" onsubmit="return(validate())">
+
+        <div class="form-group">
+        <label for="firstname">First Name</label>
+            <input type="text" class="form-control" name="firstname" id="firstname" placeholder="enter first name" onblur="validate()"/><br>
+        <div id="fname"></div>
+        </div>
+
+        <div class="form-group">
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" class="form-control" id="lastname" placeholder="enter last name"/><br>
+            <div id="lname"></div>
+        </div>
+
+        <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" class="form-control" id="email" placeholder="enter your email" onblur="validate()"/><br>
+            <div id="email1"></div>
+        </div>
+
+        <div class="form-group">
+        <label for="confirmemail">Confirm Email</label>
+        <input type="email" name="confirm email" class="form-control" id="confirmemail" placeholder="enter email again to confirm" onblur="validate()"/><br>
+            <div id="email2"></div>
+        </div>
+
+        <label class="control-label">
+            choose gender : </label>
+
+        <label class="radio">
+        <input type="radio" name="gender" value="male"/> male
+        </label>
+
+        <label class="radio">
+        <input type="radio" name="gender" value="female" /> female
+        </label>
+        <div id="gen"></div>
+
+        <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="number" name="phone" class="form-control" id="phone"  maxlength="10" placeholder="enter your phone number" onblur="validate()"/><br>
+            <div class="num"></div>
+        </div>
+
+        <button type="submit" id="sender_button" class="btn btn-default">Register</button>
+
+    </form>
+</div>
+</body>
+</html>

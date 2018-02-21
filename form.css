@@ -1,0 +1,21 @@
+.container{
+    background-color: yellow;
+    height: 670px;
+    width: 600px;
+}
+table {
+    width: 50%;
+}
+
+th {
+
+    background: cadetblue;
+    font-weight: bold;
+    padding: 6px;
+    color: black;
+}
+
+td {
+    background: beige;
+    padding: 6px;
+}
